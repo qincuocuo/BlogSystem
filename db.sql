@@ -16,5 +16,6 @@ create table if not exists tb_blog(
   content text comment '博客内容',
   ctime datetime comment '博客的创建时间'
 );
+
 insert tb_tag values(null, 'C++'),(null, 'Java'),(null, 'Mysql'),(null, 'Linux');
 insert tb_blog values(null, 1, '这是一个C++博客', '##C++是最好的语言', now()),(null, 2, '这是一个Java博客', '##Java是最好的语言', now()),(null, 4, '这是一个Linux博客', '##Linux是最好的语言', now());
