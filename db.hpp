@@ -7,6 +7,7 @@
 #define MYSQL_USER "root"
 #define MYSQL_PSWD "" 
 #define MYSQL_DB "db_blog"
+
 namespace blog_system{
   static std::mutex g_mutex;
   MYSQL *MysqlInit()//向外提供接口返回初始化完成的mysql句柄(包含连接服务器，选择数据库，设置字符集)
